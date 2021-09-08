@@ -1,4 +1,4 @@
-package com.monsterlud.vinylist
+package com.monsterlud.groovestock
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
