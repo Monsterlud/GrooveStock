@@ -10,6 +10,7 @@ This app uses a single Activity with three Fragments that get swapped out within
 
 ## User Interface.
 ![groovestock material themes](images/groovestock_materialthemes.png) ![groovestock_color demo](images/groovestock_materialdemo.png)
+
 Google's Material Design is the main guiding force behind all design UI decisions. Here is the process of choosing color palettes.
 
 ## Stage One.
