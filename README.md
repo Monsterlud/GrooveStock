@@ -2,14 +2,19 @@
 # GrooveStock
 GrooveStock is a simple, clean app to keep track of your vinyl, cd's, cassettes, & mp3's. This app is being built in stages to showcase various libraries and frameworks. Each stage will add additional functionality to the application.
 
-## Design.
+## Design & Navigation.
 ![groovestock wireframe](images/groovestock_wireframe.png)
+The basic navigational flow of the app is simple: after the user logs in they are taken to the AlbumList view of their music collection. There they can add additional items to their collection by tapping the add button (not shown here). The AlbumDetail page allows the user to edit properties such as album release date, label, media, etc. An appbar-level button will allow the user to quickly find out which record stores are in their vicinity. This will be added at a later stage.
+
+This app uses a single Activity with three Fragments that get swapped out within a single Fragment Container. The Jetpack Navigation Graph, NavHost, and NavController were used to achieve this functionality.
+
+## User Interface.
 ![groovestock material themes](images/groovestock_materialthemes.png) ![groovestock_color demo](images/groovestock_materialdemo.png)
+Google's Material Design is the main guiding force behind all design UI decisions. Here is the process of choosing color palettes.
 
 ## Stage One.
-In this stage I am building the basic skeleton of the app: Model, UI, XML layouts, Activities, Fragments, ViewModels, and Adapters. I am using a single Activity with 3 Fragments that get swapped out within a single FragmentContainer. 
+In this stage I am building the basic skeleton of the app: Model, UI, XML layouts, Activities, Fragments, ViewModels, and Adapters. 
 
-Here, I am beginning to use Android Jetpack: a collection of libraries that allow for the concise, organized code that will guide the rest of the project. The ViewModel component that is part of Jetpack allows for an MVVM (Model-View-ViewModel) structure to be the organizing architecture. The ViewModel classes will use LiveData to hold the data for the UI to observe. The ViewModels will ensure that the state of the Activities and Fragments will survive configuration changes and are fully LifeCycle aware. I will not be integrating the REST/API functionality in this stage. 
 
 ![groovestock architecture](images/groovestock_architecture.png)
 
