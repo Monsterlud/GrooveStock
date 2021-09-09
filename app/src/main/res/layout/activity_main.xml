@@ -10,7 +10,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.monsterlud.groovestock.ui.main.AlbumListFragment"
+        android:name="com.monsterlud.groovestock.ui.main.fragments.AlbumListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

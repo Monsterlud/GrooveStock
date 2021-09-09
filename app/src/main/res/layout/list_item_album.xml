@@ -38,7 +38,7 @@
                 android:id="@+id/tvAlbumTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/urbanist_semibold"
                 android:text="Live at the Knife &amp; Fiddle"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
@@ -47,7 +47,7 @@
                 android:id="@+id/tvArtist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/urbanist_medium"
                 android:text="Roshambo"
                 android:textColor="@color/bluegrey_light"
                 android:textSize="12dp" />
@@ -56,7 +56,7 @@
                 android:id="@+id/tvLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/urbanist_medium"
                 android:text="BatJ Records"
                 android:textColor="@color/bluegrey_light"
                 android:textSize="12dp" />
@@ -73,7 +73,7 @@
                 android:id="@+id/tvRelease"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/urbanist_medium"
                 android:text="2021"
                 android:textColor="@color/bluegrey_light"
                 android:textSize="10dp" />
@@ -82,7 +82,7 @@
                 android:id="@+id/tvMedia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
+                android:fontFamily="@font/urbanist_medium"
                 android:text="Media"
                 android:textColor="@color/bluegrey_light"
                 android:textSize="10dp" />
