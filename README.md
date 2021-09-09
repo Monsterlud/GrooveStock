@@ -7,4 +7,4 @@ In this stage I am building the basic skeleton of the app: Model, UI, XML layout
 
 ![groovestock architecture](images/groovestock_architecture.png)
 
-![groovestock_wireframe](images/groovestock_wireframe.png
+![groovestock wireframe](images/groovestock_wireframe.png)
