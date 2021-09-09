@@ -1,4 +1,4 @@
-![groovestock applogo](images/groovestock_logo.png)
+![groovestock applogo](images/groovestock_applogo.png)
 # GrooveStock
 GrooveStock is a simple, clean app to keep track of your vinyl, cd's, cassettes, & mp3's. I am building this repository in stages to highlight newer libraries available within the Android ecosystem and to incrementally add functionality to the app.
 
