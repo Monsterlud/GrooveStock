@@ -17,6 +17,15 @@ data class Album(
     @ColumnInfo(name = "album_artist")
     val albumArtist: String
 ) {
+    @ColumnInfo(name = "album_released")
+    var released: Int? = null
 
+    @ColumnInfo(name = "album_label")
+    var label: String? = null
 
+    @ColumnInfo(name = "album_genre")
+    var genre: Genre? = null
+
+    @ColumnInfo(name = "album_tracks")
+    var tracks: List<Track>? = null
 }
