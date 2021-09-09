@@ -4,7 +4,7 @@ GrooveStock is a simple, clean app to keep track of your vinyl, cd's, cassettes,
 
 ## Design.
 ![groovestock wireframe](images/groovestock_wireframe.png)
-![groovestock color palette](images/groovestock_colorpalette.png) ![groovestock_color demo](images/groovestock_colordemo.png)
+![groovestock material themes](images/groovestock_materialthemes.png) ![groovestock_color demo](images/groovestock_materialdemo.png)
 
 ## Stage One.
 In this stage I am building the basic skeleton of the app: Model, UI, XML layouts, Activities, Fragments, ViewModels, and Adapters. I am using a single Activity with 3 Fragments that get swapped out within a single FragmentContainer. 
