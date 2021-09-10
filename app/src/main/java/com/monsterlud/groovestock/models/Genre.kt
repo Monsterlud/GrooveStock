@@ -1,4 +1,4 @@
-package com.monsterlud.groovestock.model
+package com.monsterlud.groovestock.models
 
 enum class Genre {
     BLUES, CLASSICAL, COMEDY, COUNTRY, DISCO, ELECTRONIC,

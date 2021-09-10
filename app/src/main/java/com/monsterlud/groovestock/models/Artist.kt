@@ -1,4 +1,4 @@
-package com.monsterlud.groovestock.model
+package com.monsterlud.groovestock.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
