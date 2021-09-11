@@ -15,6 +15,8 @@ interface AlbumRepository {
 
     fun deleteAlbum(album: Album)
 
+//    fun deleteAllAlbums()
+
     fun getAllArtists(): List<Artist>
 
     fun addArtist(artist: Artist)

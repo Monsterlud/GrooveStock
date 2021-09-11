@@ -20,4 +20,7 @@ interface AlbumDao {
 
     @Delete
     fun deleteAlbum(album: Album)
+
+//    @Query("DELETE FROM album_data_table")
+//    fun deleteAllAlbums()
 }

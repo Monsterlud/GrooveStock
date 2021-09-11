@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_copyright.xml" value="0.2358974358974359" />
+        <entry key="app/src/main/res/drawable/ic_google_pixel_5___1.xml" value="1.1" />
+        <entry key="app/src/main/res/drawable/ic_groovestock_splash.xml" value="0.2358974358974359" />
         <entry key="app/src/main/res/font/helvetica_neue.xml" value="0.26965811965811964" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.19176706827309237" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.223828125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login2.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22264957264957264" />
         <entry key="app/src/main/res/layout/fragment_album_detail.xml" value="0.2984375" />
-        <entry key="app/src/main/res/layout/fragment_album_list.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/fragment_album_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/list_item_album.xml" value="0.67" />
       </map>
     </option>

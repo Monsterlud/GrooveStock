@@ -1,12 +1,17 @@
 package com.monsterlud.groovestock
 
 import android.app.Application
+
+import android.util.Log
 import com.monsterlud.groovestock.database.AlbumDatabase
 import com.monsterlud.groovestock.database.repository.AlbumRepository
 import com.monsterlud.groovestock.database.repository.AlbumRepositoryImpl
 import com.monsterlud.groovestock.models.Album
 
+const val TAG = "App.kt"
+
 class App : Application() {
+
 
     companion object {
         private lateinit var instance: App
@@ -25,6 +30,9 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+
+        //For now, start with a clean database. Comment out for persistent data.
+//        repository.deleteAllAlbums()
 
         if (repository.getAllAlbums().isEmpty()) {
             repository.addAlbums(

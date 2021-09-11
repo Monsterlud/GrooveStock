@@ -20,6 +20,8 @@ class AlbumRepositoryImpl(
 
      override fun deleteAlbum(album: Album) = albumDao.deleteAlbum(album)
 
+//     override fun deleteAllAlbums() = albumDao.deleteAllAlbums()
+
      override fun getAllArtists(): List<Artist> = artistDao.getAllArtists()
 
      override fun addArtist(artist: Artist) = artistDao.addArtist(artist)

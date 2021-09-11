@@ -2,7 +2,11 @@
 <resources>
 
     <style name="loginAppName">
-        <item name="android:textSize">42sp </item>
+        <item name="android:textSize">42sp</item>
         <item name="fontFamily"></item>
+    </style>
+
+    <style name="splashScreen">
+        <item name="android:windowBackground">@drawable/ic_google_pixel_5___1</item>
     </style>
 </resources>

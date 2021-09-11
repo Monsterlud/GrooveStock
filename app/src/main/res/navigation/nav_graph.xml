@@ -12,8 +12,7 @@
         tools:layout="@layout/fragment_album_list" >
         <action
             android:id="@+id/action_albumListFragment_to_albumDetailFragment"
-            app:destination="@id/albumDetailFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
+            app:destination="@id/albumDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/albumDetailFragment"
@@ -22,12 +21,7 @@
         tools:layout="@layout/fragment_album_detail" >
         <action
             android:id="@+id/action_albumDetailFragment_to_albumListFragment"
-            app:destination="@id/albumListFragment"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:destination="@id/albumListFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/findAGrooveFragment"
-        android:name="com.monsterlud.groovestock.ui.main.fragments.FindAGrooveFragment"
-        android:label="fragment_find_a_groove"
-        tools:layout="@layout/fragment_find_a_groove" />
+
 </navigation>
