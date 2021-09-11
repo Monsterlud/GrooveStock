@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22264957264957264" />
         <entry key="app/src/main/res/layout/fragment_album_detail.xml" value="0.2984375" />
         <entry key="app/src/main/res/layout/fragment_album_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_find_a_groove.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/list_item_album.xml" value="0.67" />
       </map>

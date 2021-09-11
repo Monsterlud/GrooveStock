@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
@@ -39,6 +40,9 @@ class AlbumListFragment : Fragment() {
             false
         )
         val view = binding.root
+        view.setOnClickListener() {
+            Navigation.createNavigateOnClickListener(R.id.action_albumListFragment_to_albumDetailFragment)
+        }
         return view
     }
 

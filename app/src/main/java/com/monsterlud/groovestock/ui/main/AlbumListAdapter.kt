@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.monsterlud.groovestock.R
 import com.monsterlud.groovestock.databinding.ListItemAlbumBinding
@@ -29,7 +30,6 @@ class AlbumListAdapter(
         private val albumMedia = binding.tvMedia
         private val albumGenre = binding.tvGenre
 
-
         fun bind(album: Album) {
             albumTitle.text = album.albumTitle
             albumArtist.text = album.albumArtist
@@ -37,7 +37,6 @@ class AlbumListAdapter(
             albumReleased.text = album.released
             albumMedia.text = album.genre.toString()
             albumGenre.text = album.media.toString()
-
         }
     }
 
@@ -53,6 +52,7 @@ class AlbumListAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val album = albums[position]
         holder.bind(album)
+
     }
 
     override fun getItemCount(): Int = albums.size
