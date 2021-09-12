@@ -1,29 +1,41 @@
 package com.monsterlud.groovestock.ui.main.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.monsterlud.groovestock.R
+import com.monsterlud.groovestock.databinding.FragmentAlbumDetailBinding
 
 
 class AlbumDetailFragment : Fragment() {
 
+    private var binding: FragmentAlbumDetailBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_album_detail, container, false)
+        binding = FragmentAlbumDetailBinding.inflate(
+            inflater,
+            container,
+            false
+        )
+        return binding!!.root
     }
 
-    companion object {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.appbar_menu, menu)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

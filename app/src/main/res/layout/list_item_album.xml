@@ -26,7 +26,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="2dp"
-            android:background="@color/bluegrey_light" />
+            android:src="@drawable/albumcover"/>
 
         <LinearLayout
             android:layout_width="250dp"
@@ -41,7 +41,7 @@
                 android:fontFamily="@font/urbanist_semibold"
                 android:text="Live at the Knife &amp; Fiddle"
                 android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tvArtist"
@@ -49,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/urbanist_medium"
                 android:text="Roshambo"
-                android:textColor="@color/bluegrey_light"
-                android:textSize="12dp" />
+                android:textColor="@color/white"
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/tvLabel"
@@ -87,14 +87,7 @@
                 android:textColor="@color/bluegrey_light"
                 android:textSize="10dp" />
 
-            <TextView
-                android:id="@+id/tvGenre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/urbanist_medium"
-                android:text="Genre"
-                android:textColor="@color/bluegrey_light"
-                android:textSize="10dp"/>
+
         </LinearLayout>
 
     </LinearLayout>

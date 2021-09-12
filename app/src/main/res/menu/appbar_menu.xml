@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_findagroove"
+        android:icon="@drawable/ic_map"
+        android:title="@string/find_a_groove"
+        android:tooltipText="Find a Groove!"
+        android:contentDescription="@string/navigate_to_google_maps"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

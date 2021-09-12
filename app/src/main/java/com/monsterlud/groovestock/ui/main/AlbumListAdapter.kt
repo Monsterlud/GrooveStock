@@ -21,7 +21,14 @@ class AlbumListAdapter(
 
     inner class ViewHolder (
         val binding: ListItemAlbumBinding
-    ) : RecyclerView.ViewHolder(binding.root)
+    ) : RecyclerView.ViewHolder(binding.root) {
+
+        init {
+            binding.root.setOnClickListener {
+                Navigation.createNavigateOnClickListener(R.id.action_albumListFragment_to_albumDetailFragment)
+            }
+        }
+    }
 
 
 
@@ -31,9 +38,8 @@ class AlbumListAdapter(
             parent,
             false
         )
-//        binding.root.setOnClickListener() {
-//            Navigation.createNavigateOnClickListener(R.id.action_albumListFragment_to_albumDetailFragment)
-//        }
+
+
         return ViewHolder(binding)
     }
 
@@ -44,7 +50,6 @@ class AlbumListAdapter(
         holder.binding.tvLabel.text = album.label
         holder.binding.tvReleased.text = album.released
         holder.binding.tvMedia.text = album.media.toString()
-        holder.binding.tvGenre.text = album.genre.toString()
 
             }
 

@@ -15,23 +15,18 @@ data class Album(
     val albumTitle: String,
 
     @ColumnInfo(name = "album_artist")
-    val albumArtist: String
-){
+    val albumArtist: String,
 
     @ColumnInfo(name = "album_released")
-    var released: String? = null
+    var released: String,
 
     @ColumnInfo(name = "album_label")
-    var label: String? = null
+    var label: String,
 
     @ColumnInfo(name = "album_media")
-    var media: Media? = null
+    var media: Media,
 
-    @ColumnInfo(name = "album_genre")
-    var genre: Genre? = null
-
-
-}
+)
 //    @ColumnInfo(name = "album_coverUrl")
 //    val albumCoverUrl: String? = null
 
