@@ -13,32 +13,17 @@ import com.monsterlud.groovestock.inflate
 import com.monsterlud.groovestock.models.Album
 
 class AlbumListAdapter(
-    private val context: Context,
+    context: Context,
     private val albums: List<Album>
-    ) : RecyclerView.Adapter<AlbumListAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<AlbumListAdapter.ViewHolder>() {
 
     private val layoutInflater = LayoutInflater.from(context)
 
-    inner class ViewHolder constructor(
-        binding: ListItemAlbumBinding
-    ) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder (
+        val binding: ListItemAlbumBinding
+    ) : RecyclerView.ViewHolder(binding.root)
 
-        private val albumTitle = binding.tvAlbumTitle
-        private val albumArtist = binding.tvArtist
-        private val albumLabel = binding.tvLabel
-        private val albumReleased = binding.tvRelease
-        private val albumMedia = binding.tvMedia
-        private val albumGenre = binding.tvGenre
 
-        fun bind(album: Album) {
-            albumTitle.text = album.albumTitle
-            albumArtist.text = album.albumArtist
-            albumLabel.text = album.label
-            albumReleased.text = album.released
-            albumMedia.text = album.genre.toString()
-            albumGenre.text = album.media.toString()
-        }
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ListItemAlbumBinding.inflate(
@@ -46,18 +31,23 @@ class AlbumListAdapter(
             parent,
             false
         )
+//        binding.root.setOnClickListener() {
+//            Navigation.createNavigateOnClickListener(R.id.action_albumListFragment_to_albumDetailFragment)
+//        }
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val album = albums[position]
-        holder.bind(album)
+        holder.binding.tvAlbumTitle.text = album.albumTitle
+        holder.binding.tvArtist.text = album.albumArtist
+        holder.binding.tvLabel.text = album.label
+        holder.binding.tvReleased.text = album.released
+        holder.binding.tvMedia.text = album.media.toString()
+        holder.binding.tvGenre.text = album.genre.toString()
 
-    }
+            }
 
     override fun getItemCount(): Int = albums.size
-
-
-
 
 }

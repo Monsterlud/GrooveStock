@@ -33,8 +33,9 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_add" />
+                            <entry key="outputName" value="ic_google_pixel_5___1" />
                             <entry key="sourceFile" value="$PROJECT_DIR$/../../../Desktop/GrooveStock/Google Pixel 5 – 1.svg" />
                           </map>
                         </option>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bluegrey_background"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".ui.login.LoginActivity"
+    android:theme="@style/Theme.GrooveStock">
 
     <TextView
         android:id="@+id/tvLoginAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/urbanist_semibold"
         android:text="GrooveStock"
-        android:textColor="@color/orange_med"
+        android:textColor="@color/orange_light"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +26,7 @@
         android:id="@+id/etUsername"
         android:layout_width="240dp"
         android:layout_height="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/urbanist_medium"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -39,7 +41,7 @@
         android:id="@+id/etPassword"
         android:layout_width="240dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
         android:fontFamily="@font/urbanist_medium"
         android:hint="Password"
         android:inputType="textPersonName"
@@ -51,16 +53,18 @@
         app:layout_constraintTop_toBottomOf="@id/etUsername" />
 
     <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.GrooveStock"
         android:id="@+id/btnLogin"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="240dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@color/bluegrey_dark"
         android:fontFamily="@font/urbanist_medium"
         android:text="Login"
         android:textColor="@color/mischka"
         android:textSize="24sp"
-        app:cornerRadius="@dimen/cardview_default_radius"
+        app:cornerRadius="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />

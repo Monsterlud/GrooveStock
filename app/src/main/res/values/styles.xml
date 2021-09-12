@@ -3,10 +3,13 @@
 
     <style name="loginAppName">
         <item name="android:textSize">42sp</item>
-        <item name="fontFamily"></item>
+        <item name="fontFamily">Urbanest</item>
     </style>
 
     <style name="splashScreen">
-        <item name="android:windowBackground">@drawable/ic_google_pixel_5___1</item>
+        <item name="android:windowBackground">@drawable/ic_splashscreen</item>
     </style>
+
+
+
 </resources>

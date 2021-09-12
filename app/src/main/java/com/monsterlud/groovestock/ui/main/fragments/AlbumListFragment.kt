@@ -16,16 +16,14 @@ import com.monsterlud.groovestock.ui.main.AlbumListAdapter
 
 class AlbumListFragment : Fragment() {
 
-    private lateinit var _binding: FragmentAlbumListBinding
-    private val binding get() = _binding!!
+    private var binding: FragmentAlbumListBinding? = null
     private var albums = App.repository.getAllAlbums()
-    private val recyclerView = binding.albumRecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        recyclerView.layoutManager = LinearLayoutManager(activity)
-        recyclerView.adapter = activity?.let { AlbumListAdapter(it, albums) }
+
     }
 
     override fun onCreateView(
@@ -34,19 +32,29 @@ class AlbumListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentAlbumListBinding.inflate(
+        binding = FragmentAlbumListBinding.inflate(
             inflater,
             container,
             false
         )
-        val view = binding.root
-        view.setOnClickListener() {
-            Navigation.createNavigateOnClickListener(R.id.action_albumListFragment_to_albumDetailFragment)
+        val recyclerView = binding?.albumRecyclerView
+
+        if (recyclerView != null) {
+            recyclerView.layoutManager = LinearLayoutManager(activity)
+            recyclerView.adapter = activity?.let {
+                AlbumListAdapter(it, albums)
+            }
         }
-        return view
+
+        return binding!!.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
     }
 }

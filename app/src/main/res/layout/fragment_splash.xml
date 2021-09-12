@@ -4,14 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.fragments.SplashFragment"
-    android:theme="@style/Theme.AppCompat.NoActionBar">
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="@drawable/ic_splashscreen">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_google_pixel_5___1"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
-        android:contentDescription="@string/splash_screen"/>
+
 
 </FrameLayout>
