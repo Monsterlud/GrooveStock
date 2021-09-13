@@ -6,7 +6,7 @@ GrooveStock is a simple, clean app to keep track of your vinyl, cd's, cassettes,
 ![groovestock wireframe](images/groovestock_wireframe.png)
 The basic navigational flow of the app is simple: after the user logs in they are taken to the AlbumList view of their music collection. There they can add additional items to their collection by tapping the floating action button (not shown here) which takes them to the AlbumDetail page. The AlbumDetail page allows the user to add or edit properties such as album title, artist, release date, label, and media. The user can add, update, or delete items from their music collection on this page as well. An appbar button will allow the user to quickly find out which record stores are in their vicinity via a Google Maps fragment. 
 
-![groovestock nav graph](images/navgraph.png) ![groovestock album detail](images/albumdetail.png)
+![groovestock nav graph](images/navgraph.png)  ![groovestock album detail](images/albumdetail.png)
 
 This app uses a single Activity with three Fragments that get swapped out within a single Fragment Container using Jetpack Navigation Components.
 
