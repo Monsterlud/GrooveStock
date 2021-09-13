@@ -23,10 +23,13 @@ The initial stage of development includes the building of the basic skeleton of 
 GrooveStock is written entirely in Kotlin using Android Studio Arctic Fox 2020.3.1. In this initial stage the data is organized by Jetpack Architectural Components in a MVVM pattern using the Room Persistence Library with all data being stored locally using SQLite. The UI was developed using Material Design practices with views being bound to Fragments using the ViewBinding library. Navigation was achieved using Jetpack Navigation Components NavGraph, NavController, and NavHost. SafeArgs were used to pass data between Fragments in a type-safe manner. All layouts were written in XML and an "include" was used in the AlbumDetailFragment layout file to house the album information section. The images used here are just filler to give an idea of what the layouts should look like when the process is finished.
 
 ## Stage Two.
-Stage Two will involve starting to build the ViewModels for the Fragments. This will ensure that the data survives any configuration changes or system-based Activity destruction. It will also include migrating the data storage to the cloud via Retrofit2 and Firebase. Retrofit will allow the Repository to make API calls to retrieve and upload JSON files using a GSON converter. This will allow the Repository to be the single source of data manipulation within the application. Finally, a local cache will be configured to allow the user to use the application even when the network is down.
+Stage Two will involve building out the ViewModels for the Fragments. This will ensure that the data survives any configuration changes or system-based Activity destruction. It will also include migrating the data storage from local storage to the cloud via Retrofit2 and Firebase. Retrofit will allow the Repository to make API calls to retrieve and upload JSON files using a GSON converter. Google's Firebase will house the DataStore on a remote server. This will allow the Repository to be the single source of data manipulation within the application - interacting with both local and remote databases. Finally, a local cache of data will be configured to allow the user to use the application even when the network is down.
   
 ## Stage Three.
 Stage Three will be all about hooking up the Application to a public API that serves Album data. At this point the Entities will be altered to work exclusively with the API which will eliminate much of the manual data entry that has existed so far in the App. Adding Albums will be much easier after this functionality is added and there will be much more information added such as Track Names, etc. In order to complete this functionality, the User Login, Token, and API key functionality will be completed.
+
+## Stage Four.
+After polishing up the app, GrooveStock will be compiled into an APK to be loaded onto the Google Play Store.
   
 
 
