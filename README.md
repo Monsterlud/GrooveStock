@@ -16,7 +16,7 @@ This app uses a single Activity with three Fragments that get swapped out within
 Google's Material Design was used as the main guiding force behind all design UI decisions. Shown here is the process of choosing color palettes from Material Design's color interface tool. 
 
 ## Stage One.
-The initial stage of development includes the building of the basic skeleton of the app: Model, UI, XML layouts, Activities, Fragments, Entities, ViewModels, Database, DAOs, Repository, Navigation Components and Adapters. The idea with this stage was to assemble the main components to give the Activities, Fragments, and RecyclerViews basic functionality. This base will be built upon in upcoming stages with added functionality. 
+The initial stage of development includes the building of the basic skeleton of the app: Model, UI, XML layouts, Activities, Fragments, Entities, ViewModels, Database, DAOs, Repository, Navigation Components and Adapters. The idea with this stage was to assemble the main components and to give the Activities, Fragments, and RecyclerViews basic functionality. This base will be built upon in upcoming stages with added functionality. 
 
 ![groovestock architecture](images/groovestock_architecture.png)
 
