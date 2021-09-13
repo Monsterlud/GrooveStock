@@ -27,6 +27,8 @@ data class Album(
     var media: Media,
 
 )
+
+fun List<Album>.getAlbum(id: Int) = find { it.albumId == id } ?: error("Album Not Found")
 //    @ColumnInfo(name = "album_coverUrl")
 //    val albumCoverUrl: String? = null
 

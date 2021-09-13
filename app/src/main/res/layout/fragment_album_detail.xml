@@ -9,23 +9,26 @@
 
     <ImageView
         android:id="@+id/iv_albumCover"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
+        android:layout_width="359dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:layout_gravity="center"
         android:background="@color/bluegrey_background"
+        android:src="@drawable/albumart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/albumart"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/fragment_album_info" />
+    <include
+        android:id="@+id/album_info"
+        layout="@layout/fragment_album_info" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp">
 

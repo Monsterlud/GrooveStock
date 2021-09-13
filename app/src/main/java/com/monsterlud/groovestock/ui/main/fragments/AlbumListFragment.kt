@@ -1,11 +1,9 @@
 package com.monsterlud.groovestock.ui.main.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.view.*
-import androidx.appcompat.view.menu.MenuBuilder
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
@@ -40,11 +38,16 @@ class AlbumListFragment : Fragment() {
         if (recyclerView != null) {
             recyclerView.layoutManager = LinearLayoutManager(activity)
             recyclerView.adapter = activity?.let {
-                AlbumListAdapter(it, albums)
+                AlbumListAdapter(it, albums, ::onAlbumClick)
             }
         }
-
         return binding!!.root
+    }
+
+    private fun onAlbumClick(id: Int) {
+        val action
+        = AlbumListFragmentDirections.actionAlbumListFragmentToAlbumDetailFragment(id)
+        activity?.findNavController(R.id.nav_host_fragment_container)?.navigate(action)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -13,15 +13,19 @@
         <action
             android:id="@+id/action_albumListFragment_to_albumDetailFragment"
             app:destination="@id/albumDetailFragment"
-            app:enterAnim="@android:anim/slide_in_left"
+            app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@android:anim/slide_in_left"
-            app:popExitAnim="@anim/nav_default_exit_anim" />
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/albumDetailFragment"
         android:name="com.monsterlud.groovestock.ui.main.fragments.AlbumDetailFragment"
         android:label="fragment_album_detail"
-        tools:layout="@layout/fragment_album_detail" />
+        tools:layout="@layout/fragment_album_detail" >
+        <argument
+            android:name="album_id"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>

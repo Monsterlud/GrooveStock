@@ -8,7 +8,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="8dp"
@@ -82,7 +82,7 @@
                 android:id="@+id/tvMedia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/urbanist_medium"
+                android:fontFamily="@font/urbanist_semibold"
                 android:text="Media"
                 android:textColor="@color/bluegrey_light"
                 android:textSize="10dp" />
