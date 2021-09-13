@@ -9,13 +9,14 @@ import com.monsterlud.groovestock.R
 
 class MainActivity : AppCompatActivity() {
 
-//    protected lateinit var app: App
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
-//        app = App()
+    fun setAppbarTitle(title: String) {
+        this.setTitle(title)
 
     }
+
 }

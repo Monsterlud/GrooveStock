@@ -8,6 +8,7 @@ import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
 import com.monsterlud.groovestock.databinding.FragmentAlbumDetailBinding
 import com.monsterlud.groovestock.databinding.FragmentAlbumInfoBinding
+import com.monsterlud.groovestock.models.Album
 import com.monsterlud.groovestock.models.getAlbum
 import com.monsterlud.groovestock.ui.main.fragments.AlbumDetailFragmentArgs.*
 
@@ -21,6 +22,7 @@ class AlbumDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        activity?.setTitle("Album Detail")
     }
 
     override fun onCreateView(
@@ -30,9 +32,8 @@ class AlbumDetailFragment : Fragment() {
     ): View? {
 
         // Get the arguments
-        val id = args.albumId
 
-        val album = App.repository.getAllAlbums().getAlbum(id)
+        val id = args.albumId
 
 
         // Inflate the layout for this fragment
@@ -41,6 +42,16 @@ class AlbumDetailFragment : Fragment() {
             container,
             false
         )
+        if (id != -1) {
+            val album = App.repository.getAllAlbums().getAlbum(id)
+            inflateAlbumInfo(album)
+        }
+        return binding!!.root
+    }
+
+
+    private fun inflateAlbumInfo(album: Album) {
+
         infoBinding = binding!!.albumInfo
 
         infoBinding?.etAlbumTitle?.setText(album.albumTitle)
@@ -49,8 +60,10 @@ class AlbumDetailFragment : Fragment() {
         infoBinding?.etReleased?.setText(album.released)
         infoBinding?.etMedia?.setText(album.media.toString())
 
-        return binding!!.root
+        binding!!.btnAddUpdate.setText("Update")
+        binding!!.btnCancelDelete.setText("Delete")
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.appbar_menu, menu)
@@ -60,4 +73,5 @@ class AlbumDetailFragment : Fragment() {
         super.onDestroy()
         binding = null
     }
+
 }
