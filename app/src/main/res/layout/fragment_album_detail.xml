@@ -7,18 +7,37 @@
     android:orientation="vertical"
     tools:context=".ui.main.fragments.AlbumDetailFragment">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
     <ImageView
         android:id="@+id/iv_albumCover"
-        android:layout_width="359dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginTop="8dp"
         android:background="@color/bluegrey_background"
         android:src="@drawable/albumart"
+        android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_backCover"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/bluegrey_background"
+        android:src="@drawable/backcover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
 
     <include
         android:id="@+id/album_info"
@@ -27,7 +46,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp">
 

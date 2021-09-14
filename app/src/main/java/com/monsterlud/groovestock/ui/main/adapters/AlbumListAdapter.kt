@@ -1,4 +1,4 @@
-package com.monsterlud.groovestock.ui.main
+package com.monsterlud.groovestock.ui.main.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import kotlin.reflect.KFunction1
 
 class AlbumListAdapter(
     context: Context,
-    private val albums: List<Album>,
+    private var albums: List<Album>,
     private val onAlbumClick: KFunction1<Int, Unit>
 ) : RecyclerView.Adapter<AlbumListAdapter.ViewHolder>() {
 
@@ -46,4 +46,8 @@ class AlbumListAdapter(
 
     override fun getItemCount(): Int = albums.size
 
+    fun updateAdapter(updatedAlbumsList: List<Album>) {
+        this.albums = updatedAlbumsList
+        notifyDataSetChanged()
+    }
 }

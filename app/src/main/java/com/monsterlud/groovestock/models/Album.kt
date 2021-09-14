@@ -12,10 +12,10 @@ data class Album(
     val albumId: Int,
 
     @ColumnInfo(name = "album_title")
-    val albumTitle: String,
+    var albumTitle: String,
 
     @ColumnInfo(name = "album_artist")
-    val albumArtist: String,
+    var albumArtist: String,
 
     @ColumnInfo(name = "album_released")
     var released: String,
