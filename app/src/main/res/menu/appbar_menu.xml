@@ -10,6 +10,14 @@
         android:contentDescription="@string/navigate_to_google_maps"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search your collection"
+        android:tooltipText="Search your collection"
+        android:contentDescription="Search your collection"
+        app:showAsAction="ifRoom" />
+
 
 
 </menu>

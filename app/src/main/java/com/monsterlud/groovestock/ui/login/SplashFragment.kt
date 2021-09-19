@@ -1,4 +1,4 @@
-package com.monsterlud.groovestock.ui.main.fragments
+package com.monsterlud.groovestock.ui.login
 
 import android.os.Bundle
 import android.util.Log

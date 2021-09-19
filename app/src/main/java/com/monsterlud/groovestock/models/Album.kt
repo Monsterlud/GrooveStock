@@ -26,11 +26,15 @@ data class Album(
     @ColumnInfo(name = "album_media")
     var media: Media,
 
-)
+    ) {
 
-fun List<Album>.getAlbum(id: Int) = find { it.albumId == id } ?: error("Album Not Found")
-//    @ColumnInfo(name = "album_coverUrl")
-//    val albumCoverUrl: String? = null
+    @ColumnInfo(name = "album_purchase_price")
+    var purchasePrice: Double = 0.0
 
-//    @ColumnInfo(name = "album_tracks")
-//    var tracks: List<Track>? = null
+    @ColumnInfo(name = "album_notes")
+    lateinit var notes: String
+
+}
+    fun List<Album>.getAlbum(id: Int) = find { it.albumId == id } ?: error("Album Not Found")
+
+

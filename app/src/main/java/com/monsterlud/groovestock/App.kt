@@ -8,9 +8,11 @@ import com.monsterlud.groovestock.database.repository.AlbumRepository
 import com.monsterlud.groovestock.database.repository.AlbumRepositoryImpl
 import com.monsterlud.groovestock.models.Album
 import com.monsterlud.groovestock.models.Media
+import dagger.hilt.android.HiltAndroidApp
 
 const val TAG = "App.kt"
 
+@HiltAndroidApp
 class App : Application() {
 
 

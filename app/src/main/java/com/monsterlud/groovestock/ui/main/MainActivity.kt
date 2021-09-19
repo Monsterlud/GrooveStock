@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
+import dagger.hilt.android.AndroidEntryPoint
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,10 +14,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
-    fun setAppbarTitle(title: String) {
-        this.setTitle(title)
-
-    }
-
 }
