@@ -8,11 +8,11 @@ private const val TAG = "AlbumListViewModel"
 
 class AlbumListViewModel : ViewModel() {
 
+    var albums = App.repository.getAllAlbums()
+
     init {
         Log.i(TAG, ": AlbumListViewModel Created!")
     }
-
-    var albums = App.repository.getAllAlbums()
 
     override fun onCleared() {
         super.onCleared()

@@ -7,11 +7,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
 import com.monsterlud.groovestock.databinding.FragmentAlbumListBinding
-import com.monsterlud.groovestock.models.Album
 import com.monsterlud.groovestock.ui.main.adapters.AlbumListAdapter
 import com.monsterlud.groovestock.ui.main.viewmodels.AlbumListViewModel
 
@@ -27,10 +25,8 @@ class AlbumListFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
         activity?.setTitle("My GrooveStock")
-
         Log.i(TAG, "onCreate: Called ViewModelProvider.get")
         viewModel = ViewModelProvider(this).get(AlbumListViewModel::class.java)
-
     }
 
     override fun onCreateView(

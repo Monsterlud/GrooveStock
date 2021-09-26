@@ -27,12 +27,14 @@ import dagger.hilt.android.AndroidEntryPoint
 
 private const val TAG = "AlbumDetailFragment"
 
+@AndroidEntryPoint
 class AlbumDetailFragment : Fragment() {
 
     private var binding: FragmentAlbumDetailBinding? = null
     private var infoBinding: FragmentAlbumInfoBinding? = null
-    val args: AlbumDetailFragmentArgs by navArgs()
+val args: AlbumDetailFragmentArgs by navArgs()
     private lateinit var viewModel: AlbumDetailViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,8 +43,6 @@ class AlbumDetailFragment : Fragment() {
 
         //Get the ViewModel
         viewModel = ViewModelProvider(this).get(AlbumDetailViewModel::class.java)
-        //Get the args
-        //viewModel.albumId = args.albumId
     }
 
     override fun onCreateView(
@@ -69,7 +69,9 @@ class AlbumDetailFragment : Fragment() {
          * call inflateAlbumInfo() to fill in the EditTexts with the chosen album info
          * and set button clicks for "Delete" and "Update"
          */
-        if (id != -1) {
+
+        val id =
+        if (viewModel.albumId != -1) {
             viewModel.album?.let { inflateAlbumInfo(it) }
             // DELETE
             binding!!.btnCancelDelete.setOnClickListener {
@@ -119,14 +121,15 @@ class AlbumDetailFragment : Fragment() {
     }
 
     private fun inflateAlbumInfo(album: Album) {
-        infoBinding?.etAlbumTitle?.setText(album.albumTitle)
-        infoBinding?.etArtist?.setText(album.albumArtist)
-        infoBinding?.etLabel?.setText(album.label)
-        infoBinding?.etReleased?.setText(album.released)
-        val media = album.media.ordinal
-        val mediaType = viewModel.getMediaEnumValueFromOrdinal(media)
-        infoBinding?.actvMediaType?.setText(mediaType.toString(), false)
-
+        if (viewModel.albumId != null) {
+            infoBinding?.etAlbumTitle?.setText(album.albumTitle)
+            infoBinding?.etArtist?.setText(album.albumArtist)
+            infoBinding?.etLabel?.setText(album.label)
+            infoBinding?.etReleased?.setText(album.released)
+            val media = album.media.ordinal
+            val mediaType = viewModel.getMediaEnumValueFromOrdinal(media)
+            infoBinding?.actvMediaType?.setText(mediaType.toString(), false)
+        }
         binding!!.btnAddUpdate.setText("Update")
         binding!!.btnCancelDelete.setText("Delete")
     }

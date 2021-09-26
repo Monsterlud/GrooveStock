@@ -8,23 +8,31 @@ import com.monsterlud.groovestock.hideSoftKeyBoard
 import com.monsterlud.groovestock.models.Album
 import com.monsterlud.groovestock.models.Media
 import com.monsterlud.groovestock.models.getAlbum
+import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlin.properties.Delegates
 
 
 private const val TAG = "AlbumDetailViewModel"
 
-class AlbumDetailViewModel(
-        private val state: SavedStateHandle?
+@HiltViewModel
+class AlbumDetailViewModel
+    @Inject constructor(
+        private val state: SavedStateHandle
     ): ViewModel() {
 
     init {
         Log.i(TAG, ": AlbumDetailViewModel Created!")
     }
-        var albumId = state?.get<Int>("album_id")
-        var album = albumId?.let { App.repository.getAllAlbums().getAlbum(it) }
+
+        var albumId = state.get<Int?>("album_id")
+        var album =
+            if (albumId == -1) { null }
+            else albumId?.let { App.repository.getAllAlbums().getAlbum(it) }
+
         var albums = App.repository.getAllAlbums()
         val mediaTypes = Media.values()
+
 
     override fun onCleared() {
         super.onCleared()
@@ -34,10 +42,10 @@ class AlbumDetailViewModel(
     fun getMediaEnumValueFromString(name: String) : Media {
         var media = Media.VINYL
         when (name) {
-            "VINYL" -> Media.VINYL
-            "CD" -> Media.CD
-            "MP3" -> Media.MP3
-            "CASSETTE" -> Media.CASSETTE
+            "VINYL" -> media = Media.VINYL
+            "CD" -> media = Media.CD
+            "MP3" -> media = Media.MP3
+            "CASSETTE" -> media = Media.CASSETTE
         }
         return media
     }
@@ -52,7 +60,7 @@ class AlbumDetailViewModel(
         return media
     }
 
-    fun deleteAlbum() {
+fun deleteAlbum() {
         album?.let { App.repository.deleteAlbum(it) }
     }
 

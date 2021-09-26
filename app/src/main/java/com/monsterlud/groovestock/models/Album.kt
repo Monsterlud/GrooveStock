@@ -28,11 +28,8 @@ data class Album(
 
     ) {
 
-    @ColumnInfo(name = "album_purchase_price")
-    var purchasePrice: Double = 0.0
-
     @ColumnInfo(name = "album_notes")
-    lateinit var notes: String
+    var notes: String? = null
 
 }
     fun List<Album>.getAlbum(id: Int) = find { it.albumId == id } ?: error("Album Not Found")

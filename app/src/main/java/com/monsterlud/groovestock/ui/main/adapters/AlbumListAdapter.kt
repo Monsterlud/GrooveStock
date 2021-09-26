@@ -11,7 +11,7 @@ import kotlin.reflect.KFunction1
 class AlbumListAdapter(
     context: Context,
     private var albums: List<Album>,
-    private val onAlbumClick: KFunction1<Int, Unit>
+    private val onAlbumClick: kotlin.reflect.KFunction1<kotlin.Int, kotlin.Unit>
 ) : RecyclerView.Adapter<AlbumListAdapter.ViewHolder>() {
 
     private val layoutInflater = LayoutInflater.from(context)

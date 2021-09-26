@@ -7,7 +7,7 @@ import com.monsterlud.groovestock.App
 import com.monsterlud.groovestock.R
 import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
