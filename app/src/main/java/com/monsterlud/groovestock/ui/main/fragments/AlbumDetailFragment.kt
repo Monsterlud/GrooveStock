@@ -32,6 +32,7 @@ class AlbumDetailFragment : Fragment() {
 
     private var binding: FragmentAlbumDetailBinding? = null
     private var infoBinding: FragmentAlbumInfoBinding? = null
+
 val args: AlbumDetailFragmentArgs by navArgs()
     private lateinit var viewModel: AlbumDetailViewModel
 
@@ -136,6 +137,10 @@ val args: AlbumDetailFragmentArgs by navArgs()
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.appbar_menu, menu)
+    }
+
+    override fun onPrepareOptionsMenu(menu: Menu) {
+        super.onPrepareOptionsMenu(menu)
     }
 
     override fun onDestroy() {

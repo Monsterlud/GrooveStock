@@ -12,6 +12,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="splash_screen">Splash screen</string>
-    <string name="find_a_groove">Find a Groove</string>
+    <string name="find_a_groove">Find a Groove!</string>
     <string name="navigate_to_google_maps">Navigate to Google Maps</string>
+    <string name="collection">Collection</string>
 </resources>

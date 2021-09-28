@@ -3,14 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_findagroove"
-        android:icon="@drawable/ic_map"
-        android:title="@string/find_a_groove"
-        android:tooltipText="Find a Groove!"
-        android:contentDescription="@string/navigate_to_google_maps"
-        app:showAsAction="ifRoom" />
-
-    <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search"
         android:title="Search your collection"
@@ -18,6 +10,18 @@
         android:contentDescription="Search your collection"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        android:contentDescription="Profile"
+        app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        android:contentDescription="Settings"
+        app:showAsAction="ifRoom" />
 
 </menu>

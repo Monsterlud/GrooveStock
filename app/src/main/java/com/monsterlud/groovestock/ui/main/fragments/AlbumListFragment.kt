@@ -78,7 +78,6 @@ class AlbumListFragment : Fragment() {
 
     override fun onPrepareOptionsMenu(menu: Menu) {
         super.onPrepareOptionsMenu(menu)
-        val findAGroove = menu.findItem(R.id.action_findagroove)
         val searchCollection = menu.findItem(R.id.action_search)
     }
 

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.GrooveStock" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/bluegrey_med</item>
+        <item name="colorPrimary">@color/bluegrey_bar</item>
         <item name="colorPrimaryVariant">@color/bluegrey_bar</item>
         <item name="colorPrimaryDark">@color/bluegrey_dark</item>
         <item name="colorOnPrimary">@color/white</item>

@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bottom_nav_selector.xml" value="0.2799145299145299" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.12735042735042734" />
         <entry key="app/src/main/res/drawable/ic_albumcover.xml" value="0.12264957264957264" />
         <entry key="app/src/main/res/drawable/ic_copyright.xml" value="0.2358974358974359" />
         <entry key="app/src/main/res/drawable/ic_google_pixel_5___1.xml" value="1.1" />
         <entry key="app/src/main/res/drawable/ic_groovestock_splash.xml" value="0.2358974358974359" />
+        <entry key="app/src/main/res/drawable/ic_library_music.xml" value="0.2799145299145299" />
+        <entry key="app/src/main/res/drawable/ic_map.xml" value="0.2799145299145299" />
         <entry key="app/src/main/res/font/helvetica_neue.xml" value="0.26965811965811964" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.19176706827309237" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.223828125" />
@@ -18,11 +21,12 @@
         <entry key="app/src/main/res/layout/fragment_album_detail.xml" value="0.284789644012945" />
         <entry key="app/src/main/res/layout/fragment_album_info.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_album_list.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_find_a_groove.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_find_a_groove.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.5" />
         <entry key="app/src/main/res/layout/list_item_album.xml" value="0.22790055248618785" />
         <entry key="app/src/main/res/layout/list_item_media.xml" value="0.13721804511278196" />
         <entry key="app/src/main/res/menu/appbar_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
