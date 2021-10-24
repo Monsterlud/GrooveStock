@@ -28,7 +28,7 @@ Stage Two will involves building out the ViewModels for the Fragments as well as
 ## Stage Three: LastFM API & LoginActivity
 Stage Three will be all about hooking up the Application to a public API that serves Album data. At this point the app's Entities will be altered to work exclusively with the API which will eliminate much of the manual data entry that has existed so far in the App. Adding Albums will be much easier after this functionality is added and there will be much more information available to the user such as Track Names, performers, etc. In order to complete this functionality, the User Login, Token, and API key functionality will be implemented as well.
 
-## Stage Four.
+## Stage Four: Details
 The app UI/UX will now be polished by migrating the views to Jetpack Compose. This will allow the UI to be declarative in the actual code of the application. 
 After polishing up the app, GrooveStock will be compiled into an APK to be loaded onto the Google Play Store.
   
